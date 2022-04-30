@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="container">
+        <div id="calculator-body">
+            <table>
+                <tr>
+                    <td colspan="4"><input type="text" id="input-box"></td>
+                </tr>
+
+                <tr>
+                    <td><button id="btn" onclick="clearData()">C</button></td>
+                    <td><button id="btn" onclick="calculator('(')">(</button></td>
+                    <td><button id="btn" onclick="calculator(')')">)</button></td>
+                    <td><button id="btn" onclick="clearData()">del</button></td>
+                </tr>
+
+                <tr>
+                    <td><button id="btn" onclick="calculator('7')">7</button></td>
+                    <td><button id="btn" onclick="calculator('8')">8</button></td>
+                    <td><button id="btn" onclick="calculator('9')">9</button></td>
+                    <td><button id="btn" onclick="calculator('+')">+</button></td>
+                </tr>
+
+                <tr>
+                    <td><button id="btn" onclick="calculator('4')">4</button></td>
+                    <td><button id="btn" onclick="calculator('5')">5</button></td>
+                    <td><button id="btn" onclick="calculator('6')">6</button></td>
+                    <td><button id="btn" onclick="calculator('-')">-</button></td>
+                </tr>
+
+                <tr>
+                    <td><button id="btn" onclick="calculator('1')">1</button></td>
+                    <td><button id="btn" onclick="calculator('2')">2</button></td>
+                    <td><button id="btn" onclick="calculator('3')">3</button></td>
+                    <td><button id="btn" onclick="calculator('*')">x</button></td>
+                </tr>
+
+                <tr>
+                    <td><button id="btn" onclick="calculator('0')">0</button></td>
+                    <td><button id="btn" onclick="calculator('.')">.</button></td>
+                    <td><button id="btn" onclick="calculator('/')">/</button></td>
+                    <td><button id="btn" onclick="result()">=</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script src="functions.js"></script>
+</body>
+</html>
